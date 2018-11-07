@@ -1,7 +1,5 @@
 <?php
-
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Application Name
@@ -12,9 +10,7 @@ return [
     | any other location as required by the application or its packages.
     |
     */
-
     'name' => env('APP_NAME', 'Laravel '.app()->version().' Boilerplate'),
-
     /*
     |--------------------------------------------------------------------------
     | Application Environment
@@ -22,12 +18,10 @@ return [
     |
     | This value determines the "environment" your application is currently
     | running in. This may determine how you prefer to configure various
-    | services your application utilizes. Set this in your ".env" file.
+    | services the application utilizes. Set this in your ".env" file.
     |
     */
-
     'env' => env('APP_ENV', 'production'),
-
     /*
     |--------------------------------------------------------------------------
     | Application Debug Mode
@@ -38,9 +32,7 @@ return [
     | application. If disabled, a simple generic error page is shown.
     |
     */
-
     'debug' => env('APP_DEBUG', false),
-
     /*
     |--------------------------------------------------------------------------
     | Application URL
@@ -51,9 +43,7 @@ return [
     | your application so that it is used when running Artisan tasks.
     |
     */
-
     'url' => env('APP_URL', 'http://localhost'),
-
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
@@ -64,9 +54,7 @@ return [
     | ahead and set this to a sensible default for you out of the box.
     |
     */
-
     'timezone' => env('APP_TIMEZONE', 'UTC'),
-
     /*
     |--------------------------------------------------------------------------
     | Application Locale Configuration
@@ -77,9 +65,7 @@ return [
     | to any of the locales which will be supported by the application.
     |
     */
-
     'locale' => env('APP_LOCALE', 'en'),
-
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale
@@ -90,8 +76,18 @@ return [
     | the language folders that are provided through your application.
     |
     */
-
     'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
+    /*
+    |--------------------------------------------------------------------------
+    | Faker Locale
+    |--------------------------------------------------------------------------
+    |
+    | This locale will be used by the Faker PHP library when generating fake
+    | data for your database seeds. For example, this will be used to get
+    | localized telephone numbers, street address information and more.
+    |
+    */
+    'faker_locale' => 'en_US',
 
     /*
     |--------------------------------------------------------------------------
@@ -103,7 +99,6 @@ return [
     |
     */
     'locale_php' => env('APP_LOCALE_PHP', 'en_US'),
-
     /*
     |--------------------------------------------------------------------------
     | Encryption Key
@@ -114,11 +109,8 @@ return [
     | will not be safe. Please do this before deploying an application!
     |
     */
-
     'key' => env('APP_KEY'),
-
     'cipher' => 'AES-256-CBC',
-
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
@@ -129,9 +121,7 @@ return [
     | this array to grant expanded functionality to your applications.
     |
     */
-
     'providers' => [
-
         /*
          * Laravel Framework Service Providers...
          */
@@ -157,14 +147,9 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-
         /*
          * Package Service Providers that aren't auto-discover...
          */
-        Appstract\BladeDirectives\BladeDirectivesServiceProvider::class,
-        Creativeorange\Gravatar\GravatarServiceProvider::class,
-        HieuLe\Active\ActiveServiceProvider::class,
-        Sofa\Eloquence\BaseServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -175,10 +160,9 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\ComposerServiceProvider::class,
         App\Providers\EventServiceProvider::class,
+        App\Providers\ObserverServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
     ],
-
     /*
     |--------------------------------------------------------------------------
     | Class Aliases
@@ -189,9 +173,7 @@ return [
     | the aliases are "lazy" loaded so they don't hinder performance.
     |
     */
-
     'aliases' => [
-
         'App' => Illuminate\Support\Facades\App::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,
@@ -225,14 +207,11 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
         /*
          * Package Aliases
          */
         'Active' => HieuLe\Active\Facades\Active::class,
         'Gravatar' => Creativeorange\Gravatar\Facades\Gravatar::class,
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
-
     ],
-
 ];

@@ -46,11 +46,98 @@ return [
         'sidebar' => [
             'dashboard' => 'Dashboard',
             'general'   => 'General',
+            'history'   => 'History',
             'system'    => 'System',
-            // **********Do_Not_Delete_me****************
+            'branches'    => 'Branches',
+        'customers'    => 'Customers',
+        'employees'    => 'Employees',
+        'books'    => 'Books',
+        'updates'    => 'Updates',
+        'issues'    => 'Issues',
+        'reverses'    => 'Reverses',
+                'tests'    => 'Tests',
+        // **********Do_Not_Delete_me****************
+
+
+
+
+
+
+
 
         ],
-        // Do not delete me :) I'm used for auto-generation
+        'branches' => [
+                        'view'        => 'View Branch',
+                        'all'        => 'All Branches',
+                        'create'     => 'Create Branch',
+                        'edit'       => 'Edit Branch',
+                        'management' => 'Branch Management',
+                        'main'       => 'Branches',
+            ],
+            'customers' => [
+                        'view'        => 'View Customer',
+                        'all'        => 'All Customers',
+                        'create'     => 'Create Customer',
+                        'edit'       => 'Edit Customer',
+                        'management' => 'Customer Management',
+                        'main'       => 'Customers',
+            ],
+            'employees' => [
+                        'view'        => 'View Employee',
+                        'all'        => 'All Employees',
+                        'create'     => 'Create Employee',
+                        'edit'       => 'Edit Employee',
+                        'management' => 'Employee Management',
+                        'main'       => 'Employees',
+            ],
+            'books' => [
+                        'view'        => 'View Book',
+                        'all'        => 'All Books',
+                        'create'     => 'Create Book',
+                        'edit'       => 'Edit Book',
+                        'management' => 'Book Management',
+                        'main'       => 'Books',
+            ],
+            'updates' => [
+                        'view'        => 'View Update',
+                        'all'        => 'All Updates',
+                        'create'     => 'Create Update',
+                        'edit'       => 'Edit Update',
+                        'management' => 'Update Management',
+                        'main'       => 'Updates',
+            ],
+            'issues' => [
+                        'view'        => 'View Issue',
+                        'all'        => 'All Issues',
+                        'create'     => 'Create Issue',
+                        'edit'       => 'Edit Issue',
+                        'management' => 'Issue Management',
+                        'main'       => 'Issues',
+            ],
+            'reverses' => [
+                        'view'        => 'View Reverse',
+                        'all'        => 'All Reverses',
+                        'create'     => 'Create Reverse',
+                        'edit'       => 'Edit Reverse',
+                        'management' => 'Reverse Management',
+                        'main'       => 'Reverses',
+            ],
+                        'tests' => [
+                        'view'        => 'View Test',
+                        'all'        => 'All Tests',
+                        'create'     => 'Create Test',
+                        'edit'       => 'Edit Test',
+                        'management' => 'Test Management',
+                        'main'       => 'Tests',
+            ],
+            // Do not delete me :) I'm used for auto-generation
+
+
+
+
+
+
+
 
     ],
 
@@ -71,6 +158,7 @@ return [
             'el'    => 'Greek',
             'en'    => 'English',
             'es'    => 'Spanish',
+            'fa'    => 'Persian',
             'fr'    => 'French',
             'he'    => 'Hebrew',
             'id'    => 'Indonesian',
